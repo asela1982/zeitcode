@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layouts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+ 
+    <style type="text/css">
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .node--internal circle {
+            fill: #555;
+        }
+
+        .node--internal text {
+            text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+        }
+
+        .link {
+            fill: none;
+            stroke: #555;
+            stroke-opacity: 0.4;
+            stroke-width: 1.5px;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+                <form>
+                        <label>
+                            <input type="radio" name="mode" value="vertical"> Vertical</label>
+                        <label>
+                            <input type="radio" name="mode" value="radial" checked> Radial</label>
+                        <label>
+                            <input type="radio" name="mode" value="horizontal"> Horizontal</label>
+                    </form>
+            <div class="col-md-12">
+                <svg width="1060" height="1060"></svg>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>title</th>
+                            <th>author</th>
+                            <th>last_updated</th>
+                            <th>url</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app-combo.js"></script>
+
+</body>
+
+</html>
